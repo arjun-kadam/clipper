@@ -1,60 +1,71 @@
+:root {
+  font-size: 16px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  border: 0;
+}
+html,
 body {
-  background-color: #ff2171;
-  font-family: "Oswald", sans-serif;
+  width: 100vw;
+  min-width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+}
+body {
+  background-color: #f5f5f4;
+  font-family: 'Catamaran', sans-serif;
+}
+h1{
+  color: red;
 }
 p {
-  color: #000000;
-  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.25;
 }
- .day{
-    color: #fff;
- }
-.grid-container {
-  display: grid;
-  grid-template-rows: auto auto auto;
-  grid-template-columns: auto auto auto;
-  grid-gap: 5px;
-  place-self: center;
-  
-  }
-  .grid-item {
-    /* background-color: rgba(255, 255, 255, 0.8); */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 5px;
-    border: 3px solid black;
-    /* border-top-style: none;
-    border-left-style:solid;
-    border-right-style: none;
-    border-bottom-style: double; */
-    font-size: 3em;
-
-  }
-
-button {
-
-    display: inline-block;
-    outline: none;
-    cursor: pointer;
-    font-size: 16px;
-    line-height: 1;
-    border-radius: 500px;
-    transition-property: background-color,border-color,color,box-shadow,filter;
-    transition-duration: .3s;
-    border: 1px solid transparent;
-    letter-spacing: 2px;
-    min-width: 160px;
-    text-transform: uppercase;
-    white-space: normal;
-    font-weight: 700;
-    text-align: center;
-    margin-top: 10px;
-    /* padding: 16px 14px 18px; */
-    color: #fff;
-    background-color: #15883e;
-    height: 48px;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
-button:hover{
-    background-color: #1db954;
+.container .wrap {
+  flex: 0 1 37.5rem;
+  margin: 0.625rem;
+}
+.container .wrap .box {
+  padding: 1.25rem;
+  background-color: #fff;
+  border: 0.0625rem solid #607d8b;
+  border-radius: 0.1875rem;
+}
+.container .wrap .box:not(:last-child) {
+  margin-bottom: 1.5625rem;
+}
+[data-copy-text] + i.material-icons {
+  transition: all 0.25s ease-in-out;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #f5f5f4;
+  padding: 0.3125rem 0.625rem;
+  color: #000;
+  border-color: #607d8b;
+  border-style: solid;
+  border-top-right-radius: 0.1875rem;
+  border-bottom-width: 0.0625rem;
+  border-left-width: 0.0625rem;
+  opacity: 0.3;
+  cursor: pointer;
+  z-index: 1;
+}
+[data-copy-text] + i.material-icons:hover,
+[data-copy-text] + i.material-icons.active {
+  background-color: #607d8b;
+  opacity: 1;
+  color: #fff;
 }

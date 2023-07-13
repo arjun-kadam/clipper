@@ -1,31 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="../assets/style.css">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="CodeHim" />
+    <title>Copy to Clipboard Button Example</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"/>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Catamaran:400,100,200,300,500,600,700,800,900|Material+Icons"/>
+    <link rel="stylesheet" href="../assets/style.css" />
+    <link rel="stylesheet" href="../assets/demo.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="wrap">
+          <h1 align="center">Monday</h1>
+          <div class="box">
+            <p data-copy-text="">ed a door here that I regret.</p>
+          </div>
+          <div class="box">
+            <p data-copy-text="">
+              I don't criticize you! And if you're worried about criticism,
+              sometimes a diet is the best defense. I don't criticize you! And
+              if you're worried about criticism, sometimes a diet is the best
+              defense. Say goodbye to these, because it's the last time!
+            </p>
+          </div>
+
+          <h1 align="center">Monday</h1>
+          <div class="box">
+            <p data-copy-text="">ed a door here that I regret.</p>
+          </div>
+          <div class="box">
+            <p data-copy-text="">
+              I don't criticize you! And if you're worried about criticism,
+              sometimes a diet is the best defense. I don't criticize you! And
+              if you're worried about criticism, sometimes a diet is the best
+              defense. Say goodbye to these, because it's the last time!
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
     <script src="../assets/main.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pinterest</title>
-</head>
-<body>
-<p style="color:#ffffff;font-size:55px;text-align:center;">Pinterest Titles and Descriptions</p>
-
-<div class="grid-container">
-    
-    <div class="grid-item"><p class="day">Monday</p></div>
-    <div class="grid-item"><p id="p1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, reprehenderit?</p></div>
-    <div class="grid-item"><button onclick="copyToClipboard('#p1')">Copy</button></div>
-
-    <div class="grid-item"><p class="day">Tuesday</p></div> 
-    <div class="grid-item"><p id="p2">Hi, I'm the 2nd TEXT</p></div>  
-    <div class="grid-item"><button onclick="copyToClipboard('#p2')">Copy</button></div>
-    
-     
-    <!-- <div class="grid-item">7</div>
-    <div class="grid-item">8</div>
-    <div class="grid-item">9</div>   -->
-  </div>
-</body>
+  </body>
 </html>
