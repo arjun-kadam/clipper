@@ -16,7 +16,7 @@ body {
   min-height: 100vh;
 }
 body {
-  background-color: #f5f5f4;
+  background-color: #FF9EAA;
   font-family: 'Catamaran', sans-serif;
 }
 h1{
@@ -39,7 +39,7 @@ p {
 }
 .container .wrap .box {
   padding: 1.25rem;
-  background-color: #fff;
+  background-color: #FF9EAA;
   border: 0.0625rem solid #607d8b;
   border-radius: 0.1875rem;
 }
